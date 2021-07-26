@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.home.HomeFragment"
+    android:background="@color/celestear">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/ic_coat_of_arms_of_argentina" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:background="@color/celestear" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:text="@string/censar_2021"
+        android:textColor="@color/black"
+        android:textSize="60sp" />
+</LinearLayout>

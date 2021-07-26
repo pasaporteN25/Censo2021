@@ -1,0 +1,2 @@
+rootProject.name = "TCenso21"
+include ':app'

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.notifications.NotificationsFragment"
+    android:background="@color/celestear">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="28dp" />
+
+    <TextView
+        android:id="@+id/dato_sexos"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="@string/textview"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="24dp" />
+
+    <TextView
+        android:id="@+id/dato_desemp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="@string/textview"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="24dp" />
+
+    <TextView
+        android:id="@+id/dato_ingresos"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:text="@string/textview"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TCenso21</string>
+    <string name="inicio">Inicio</string>
+    <string name="busqueda">Buscar</string>
+    <string name="reportes">Reportes</string>
+    <string name="ingresar_ciudadano">Ingresar Ciudadano</string>
+    <string name="ingreso">Ingreso</string>
+    <string name="agregar">Agregar</string>
+    <string name="editar" />
+    <string name="censar_2021">CensAr 2021</string>
+    <string name="textview">TextView</string>
+
+</resources>
