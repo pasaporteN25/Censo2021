@@ -10,6 +10,7 @@ import android.view.ViewGroup
 import android.widget.*
 import com.example.tcenso21.R
 import com.google.android.material.switchmaterial.SwitchMaterial
+import java.lang.Exception
 
 
 class ingresoCiudadano : Fragment() {
@@ -31,7 +32,7 @@ class ingresoCiudadano : Fragment() {
     lateinit var ingreso:EditText
     lateinit var guardar:Button
     lateinit var limpiar:Button
-    val ocupacion = arrayOf("Desempleado", "Medicina","Profesiones Liberales","Docencia","Ingenieria","Agroindustria","Estudiante","Gobierno","Otras")
+    val ocupacion = arrayOf("Desempleado", "Medicina","Profesiones Liberales","Docencia","Ingenieria","Agroindustria","Estudiante","Gobierno","Jubilado","Otras")
     val desocupado = arrayOf("Desempleado")
     var ocup_sel:String = ""
 
@@ -82,10 +83,9 @@ class ingresoCiudadano : Fragment() {
                 if(viewModel.guardarCiudadano(dni.text.toString().toInt(),nomyap.text.toString(),nacim.text.toString().toInt(),sexo,dir.text.toString(),tel.text.toString().toInt(),ocup_sel,ingreso.text.toString().toInt(),it.context))
                     Toast.makeText(ctx,"Guardado",Toast.LENGTH_SHORT).show()
                 else
-                    Toast.makeText(ctx,"Error",Toast.LENGTH_SHORT).show()
+                    Toast.makeText(ctx,"Error al guardar",Toast.LENGTH_SHORT).show()
             }
         )
-
         limpiarCampos()
 
         return view
@@ -125,9 +125,12 @@ class ingresoCiudadano : Fragment() {
                 dni.setText("")
                 nomyap.setText("")
                 nacim.setText("")
-                //sexo = intent.getStringExtra("sexo")
+                sexorg.clearCheck()
                 dir.setText("")
                 tel.setText("")
+                ocup_sp.setSelection(0)
+                ocup_sp.setEnabled(false)
+                ocup_sw.setEnabled(false)
                 ingreso.setText("")
             }
         )

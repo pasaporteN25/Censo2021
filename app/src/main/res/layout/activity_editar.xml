@@ -84,13 +84,22 @@
             android:hint="Telefono"
             android:inputType="phone" />
 
-        <EditText
-            android:id="@+id/ocupac_in"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Ocupacion"
-            android:inputType="textPersonName" />
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/ocup_sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Switch
+                android:id="@+id/ocupa_sw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
 
         <EditText
             android:id="@+id/ingreso_in"
